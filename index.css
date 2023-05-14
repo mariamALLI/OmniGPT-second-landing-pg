@@ -1,0 +1,872 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'FS Meridian Trial';
+    font-style: normal;   
+    font-weight: 500;                                       
+    src: local('FS Meridian Trial') , url(https://fonts.cdnfonts.com/s/92037/FSMeridianTrial-Medium.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'General Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: local('General Sans'), url(https://fonts.cdnfonts.com/s/85793/GeneralSans-Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;                                            
+    src: local('Poppins'), url(https://fonts.cdnfonts.com/s/16009/Poppins-Light.woff) format('woff');
+}
+
+/* layout */
+
+body {
+    background-color: #111826;
+    padding: 0;
+    margin: 0;
+    font-family: 'General Sans';
+    color: #fff;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    padding: 2rem 1.5rem;
+    margin: 0 auto;
+}
+
+.nav_logo {
+    width: 110px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.navbar ul {
+    background-color: #111826;
+    position: fixed;
+    top: -15px;
+    right: -200px;
+    width: 200px;
+    height: 50vh;
+    padding: 1.5rem 2rem;
+    color: #fff;
+    transition: left 0.5s;
+}
+
+.menu_icon {
+    width: 32px;
+}
+
+.close {
+    position: absolute;
+    top: 1rem;
+    right: 1.2rem;
+    width: 25px;
+}
+
+.double_col,
+.two_col {
+    display: grid;
+}
+
+.flex_one {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -2rem;
+}
+
+
+.pixel {
+    background-image: url(images/Rectangle\ mobile.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+   
+}
+
+.img_one {
+    width: 100%;
+    margin-bottom: -1rem;
+}
+
+.arrow_icon_purple {
+  background-image: url(images/Ellipse\ 94.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 1rem;
+  margin-top: 4rem;
+}
+
+.flex_two,
+.flex_three,
+.img_flex {
+    display: none;
+}
+
+.right_col,
+.left_col {
+    margin: 0;
+}
+
+.left_col {
+    position: relative;
+}
+
+.oval_vector {
+    background-image: url(images/oval\ circle\ mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2rem;
+    position: absolute;
+    top: 7.5rem;
+    left: -1.5rem;
+    z-index: -1;
+    width: 100%;
+}
+
+button {
+    background-color: #1FC77E;
+    color: inherit;
+    border: none;
+    border-radius: 6px;
+    padding: 1.2rem 3.5rem;
+    
+}
+
+.light_btn {
+    font-size: 1.2em;
+    margin: 0 auto;
+    display: block;
+    font-weight: 100;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+.sec_two {
+    display: none;
+}
+
+/* sec_three style layout */
+.black_txt {
+    background-color: #fff;
+    color: #000;
+    padding: 1rem;
+    border-radius: 15px
+}
+
+.pro_max_img {
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 3rem;
+    background-image: url(images/pro-max-img.png);
+    background-size: cover;
+    /* background-position: center; */
+    border-radius: 50px;
+}
+
+.fbk-and-green-chat,
+.whatsapp-and-yello-chat {
+    position: relative;
+}
+
+.fbk_icon,
+.whatsapp_icon {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 50px;
+}
+
+.fbk_icon{
+    position: absolute;
+    top: -31rem;
+}
+
+.whatsapp_icon {
+    width: 34%;
+    position: absolute;
+    top: -9rem;
+    left: 13.5rem;
+}
+
+.green_chat,
+.yellow_chat {
+    width: 90px;
+    height: 90px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    z-index: -1;
+}
+
+.green_chat {
+    top: -12rem;
+    left: -1rem;
+    background-color: #1FC77E;
+    position: absolute;
+    
+}
+
+.yellow_chat {
+    background-color: #FEEA00;
+    position: absolute;
+    top: -28rem;
+    left: 15rem;
+}
+
+/* sec_four and sec_five style layout */
+.sec_four,
+.sec_five {
+    display: none;
+}
+
+ /* sec_six */
+.feedbk_slide {
+    margin-top: 41rem;
+}
+
+.yellow_purple {
+    position: relative;
+}
+
+.star_yellow {
+    position: relative;
+    top: -12rem;
+    width: 40%;
+    left: 13rem;
+}
+
+.star_purple {
+    position: absolute;
+    z-index: 2;
+    width: 37%;
+    bottom: -5rem;
+    right: 0rem;
+}
+
+/* footer */
+.dark_bg {
+    background-color: #000;
+    margin-top: 50rem;
+    position: relative;
+}
+
+.footer_txt {
+    display: grid;
+    margin-top: 15rem;
+}
+
+.txt_one,
+.txt_two_p{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+}
+
+ .last_p {
+    display: none;
+ }
+
+ .green_box {
+    background-color: #05E283;
+    color: #fff;
+    position: absolute;
+    padding: 1rem 2rem;
+    top: -7rem;
+    border-radius: 20px;
+    left: 2rem;
+    right: 2rem;
+ }
+
+.txt {
+
+}
+
+ .dark_btn {
+    background-color: #000;
+    color: #fff;
+    font-size: 1.1em;
+    padding: 1rem 2.5rem;
+    display: block;
+    margin: 0 auto;
+ }
+
+/* Typography */
+
+ul li {
+    list-style: none;
+    text-align: center;
+    font-family: 'Poppins';
+    margin-top: 2.8rem;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.left_col_text {
+    font-family: 'FS Meridian Trial';
+    font-size: 2.5em;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.left_col_text,
+.right_column h1,
+.feedbk_slide h1 {
+    font-family: 'FS Meridian Trial';
+}
+
+.left_col h2 br {
+    display: block;
+}
+
+br {
+    display: none;
+}
+
+.left_col h2,
+.left_col h3 {
+    font-weight: 500;
+}
+
+.left_col h2 {
+    margin-top: 1.3rem;
+}
+
+.left_col p {
+    font-weight: 100;
+    font-size: 1.1em;
+    opacity: 80%;
+    margin-top: 1rem;
+}
+
+.left_col h3 {
+    font-size: 1.3em;
+    margin-top: 1rem;
+}
+
+.right_column h1 {
+    font-size: 2em;
+    margin-bottom: 2rem;
+}
+
+.green_txt{
+    color: #1FC77E;
+}
+
+.sec_three br {
+    display: block;
+}
+
+.black_txt h3 {
+    font-weight: 800;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 2rem;
+}
+
+.black_txt p {
+    padding: 1rem 1.1rem;
+    text-align: left;
+    font-size: 1.3em;
+    margin-top: -2rem;
+}
+
+.container .arsh_bg {
+    background-color: #414651;
+    padding: 2rem 1.5rem;
+    border-radius: 15px;
+    font-size: 1.5em;
+    margin-top: 2rem;
+}
+
+.one h3 {
+    font-size: 1.2em;
+}
+
+.one p {
+    font-size: 1em;
+    line-height: 1.5;
+    opacity: 70%;
+}
+
+.feedbk_slide h1 {
+    font-size: 2.5em;
+   
+}
+
+.txt_one p,
+.txt_two p,
+.last_p {
+    font-size: 1.1em;
+    margin-top: 2rem;
+}
+
+.txt_two h3 {
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+.txt {
+    padding: 1rem 1.5rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.txt h2,
+.txt_two h3 {
+    font-family: 'FS Meridian Trial';
+}
+
+.txt h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.txt p {
+    margin-bottom: 1rem;
+}
+
+.blck_txt {
+    color: #000;
+ }
+
+
+
+@media (min-width: 800px) {
+    .close,
+    .open {
+        display: none;
+    }
+
+    .navbar {
+        height: 0;
+    }
+
+    .navbar ul {
+        position: relative;
+        left: -9rem;
+        top: -3.5rem;
+        background-color: transparent;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul li {
+        margin-right: -5rem;
+    }
+
+    .nav_link {
+        font-weight: 100;
+        font-size: 1em;
+    }
+
+    .double_col {
+        grid-template-columns: auto auto;
+        gap: 20px;
+    } 
+    
+    .right_col,
+    .right_column {
+        order: 2;
+    }
+
+    .right_col {
+        margin-right: 5.5rem;
+    }
+
+    .left_col,
+    .left_column {
+        order: 1;
+    }
+
+    .left_col {
+        margin-left: 5.5rem;
+    }
+
+    .flex_one {
+        justify-content: flex-start;
+        align-items: baseline;
+        margin-top: 4rem;
+        margin-right: 5rem;
+    }
+
+    .pixel {
+        background-image: url(images/Rectangle\ desktop.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        padding: 6rem 12rem;
+        width: 100%;
+    }
+
+    .pixel::before {
+        content: url(images/group-ppl.png);
+        position: absolute;
+        top: 7.68rem;
+        left: 56rem;
+    }
+
+    .img_one {
+        display: none;
+    }
+
+    .flex_two,
+    .flex_three,
+    .img_flex {
+        display: block;
+    }
+
+    .flex_two{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: end;
+        margin-top: 2rem;
+    }
+
+    .oval_vector {
+        background-image: url(images/oval\ circle.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 4rem;
+        width: 45vw;
+        top: 14rem;
+    }
+
+    .light_btn {
+        margin: 0;
+        padding: 1rem 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .arrow_icon_purple {
+        padding: 1.5rem;
+        width: 8vw;
+        margin-left: -3rem;
+    }
+
+    .arrow_icon_green {
+       background-image: url(images/Ellipse\ 95.png);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+       padding: 1.5rem;
+       width: 6vw;
+       margin-right: -4rem;
+    }
+
+    .pixel-white {
+        background-color: #F4FAFF;
+        height: 92px;
+        width: 294px;
+        text-align: center;
+        border-top-left-radius: 60px;
+        border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+        border-top-right-radius: 60px;
+    }
+
+    .imgtwo {
+        position: relative;
+    }
+
+    .img_two {
+        width: 14vw;
+        position: absolute;
+        top: -2rem;
+        left: 3rem;
+    }
+
+    .flex_three {
+        position: relative;
+    }
+
+    .flex_text {
+        background-color: #7F3DD2;
+        height: 94px;
+        width: 416px;
+        border-top-left-radius: 60px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 60px;
+        border-top-right-radius: 60px;
+        margin-top: 2.5rem;
+        margin-left: 3rem;
+    }
+
+    .flex_text2 {
+        display: flex;
+        align-items: baseline;
+        gap: 5px;
+        justify-content: center;
+        position: absolute;
+        top: 3.2rem;
+        left: 25rem;
+        font-size: .7em;
+    }
+
+    .chat_text {
+        padding: 1rem;
+        margin-right: 4rem;
+        position: absolute;
+        top: -1rem;
+        left: 13rem;
+    }
+
+    .green_bg {
+        background-color: #1FC77E;
+        height: 77px;
+        width: 266px;
+        border-top-left-radius: 60px;
+        border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+        border-top-right-radius: 4px;
+        margin-top: 2.5rem;
+        margin-left: 4rem;
+    }
+
+    .img_three {
+        width: 60%;
+    }
+
+    .yellow_icon {
+        width: 18%;
+        margin-left: 1.5rem;
+    }
+
+    .img_flex {
+        position: absolute;
+        top: -2rem;
+        left: 3rem;
+    }
+
+         /* section_two layout style */
+    .sec_two {
+        display: none;
+    }
+
+    /* sec_three style layout */
+    .sec_three {
+        margin-top: 6rem;
+    }
+    .two_col {
+        grid-template-columns: repeat(2, 1.5fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 50px;
+        grid-row-gap: 0px;
+    }
+
+    .right_column br {
+        display: none;
+    }
+
+    .iphone_wit_img {
+        width: 60%;
+    }
+
+    .right_column {
+        padding: 0 3rem;
+        margin-top: 2.5rem;
+    }
+
+    .container .last_line {
+        border: none;
+    }
+
+    .black_txt {
+        padding: 1.1rem 1rem;
+        margin-top: 1.5rem;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .colab_hand {
+        background-color: #1FC77E;
+        border-radius: 15px;
+        padding: 1rem;
+    }
+
+    .whatsapp_icon {
+        width: 20%;
+        left: 15rem;
+    }
+
+    .green_chat {
+        left: -1.5rem;
+    }
+
+    .yellow_chat {
+        left: 18rem;
+    } 
+
+    /* sec_six */
+    .feedbk_slide {
+        position: relative;
+        margin-top: 23rem;
+    }
+
+    .star_yellow {
+        position: absolute;
+        top: -4rem;
+        left: 40rem;
+        width: 20%;
+    }
+
+    .star_purple {
+        position: absolute;
+        right: 5rem;
+        top: 6rem;
+        z-index: 2;
+        width: 16%;
+    }
+
+    /* footer */
+    .dark_bg {
+        margin-top: 33rem;
+    }
+
+    .footer_txt {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 50px;
+        grid-row-gap: 0px; 
+    }
+
+    .txt_one,
+    .txt_two_p {
+        display: block;
+    }
+
+    .foot_logo {
+        margin-top: 1.7rem;
+    }
+
+    .green_box {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        left: 16rem;
+        right: 16rem;
+        top: -4.5rem;
+        border-radius: 10px;
+    }
+
+    .txt {
+        padding: 2rem;
+        text-align: revert;
+    }
+
+    .dark_btn {
+
+    }
+   
+
+    /* typography */
+    .left_col_text {
+        font-size: 3.8em;
+        padding: 0rem 0.7rem;
+        margin-top: 4.5rem;
+    }
+
+    .left_col h2 br {
+        display: none;
+    }
+
+    .container h2 {
+        font-size: 1.8em;
+        font-weight: 700;
+    }
+
+    .container h3 {
+        font-size: 1.5em;
+    }
+
+    .container p {
+        font-size: 1.2em;
+        opacity: 75%;
+    }
+
+    br {
+        display: block;
+    }
+
+    .chat_text span {
+        opacity: 70%;
+    }
+
+   .flex_text2 p {
+    opacity: 50%;
+   }
+
+   .iphone_bars .iphone_time {
+    font-size: .9em;
+    color: #000;
+    font-weight: 700;
+    font-family: sans-serif;
+    }
+
+    .right_column h1 {
+        padding: 0rem 7rem;
+        margin-left: -7rem;
+    }
+
+    .black_txt h3 {
+        text-align: left;
+        margin-left: 0rem;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .black_txt p {
+        font-size: 1em;
+        margin-left: -1rem;
+    }
+
+    .centered_txt h1,
+    .black_txt h3 {
+        font-family: 'FS Meridian Trial';
+    }
+
+    .centered_txt h1 {
+        font-size: 2.5em;
+        padding: 0rem 24rem;
+    }
+
+    .feedbk_slide h1 {
+        margin-left: 9rem;
+        margin-bottom: 5rem;
+    }
+
+    .last_p {
+        display: block;
+    }
+
+    .txt_two h3 {
+        font-size: 1em;
+    }
+
+    .txt h2 {
+        font-size: 1.5em;
+        font-weight: 300;
+        /* padding: 0rem 15rem; */
+    }
+
+    .txt p {
+
+    }
+}
