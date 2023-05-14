@@ -290,10 +290,6 @@ button {
     right: 2rem;
  }
 
-.txt {
-
-}
-
  .dark_btn {
     background-color: #000;
     color: #fff;
@@ -722,15 +718,15 @@ br {
 
     .star_yellow {
         position: absolute;
-        top: -4rem;
-        left: 40rem;
+        top: -16rem;
+        left: 44rem;
         width: 20%;
     }
 
     .star_purple {
         position: absolute;
         right: 5rem;
-        top: 6rem;
+        top: -5rem;
         z-index: 2;
         width: 16%;
     }
@@ -769,10 +765,6 @@ br {
     .txt {
         padding: 2rem;
         text-align: revert;
-    }
-
-    .dark_btn {
-
     }
    
 
@@ -864,9 +856,5 @@ br {
         font-size: 1.5em;
         font-weight: 300;
         /* padding: 0rem 15rem; */
-    }
-
-    .txt p {
-
     }
 }
